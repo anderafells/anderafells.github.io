@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>AReview Of Nail Colors</title>
+</head>
+<body>
+
+<header>
+    <h1>A Review Of Nail Colors That Make You Go WOW</h1>
+</header>
+
+<main>
+    <ul>
+        <li> th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>&copy wcci Spring2022</small>
+</footer>
+
+</body>
+<html>
